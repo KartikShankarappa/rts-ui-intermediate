@@ -1,0 +1,25 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+
+ <mat-card>
+  <mat-card-header>Users List</mat-card-header>
+  <mat-card-content>
+  <div class="form-group">
+    <label for="userId">UserId:</label>
+    <input type="userId" [(ngModel)]="user.userId" placeholder="userId" name="userId" class="form-control" id="userId">
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">Full Name:</label>
+    <input [(ngModel)]="user.fullName" placeholder="Full Name" name="fullName" class="form-control" id="fullName">
+  </div>
+
+  <div class="form-group">
+    <label for="role">Role:</label>
+    <input [(ngModel)]="user.role" placeholder="Role" name="role" class="form-control" id="role">
+  </div>
+
+  <button class="btn btn-success" (click)="createUser()">Create</button>
+</mat-card-content>
+</mat-card>
+</div>
